@@ -1,0 +1,198 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: white;
+  color: #161616;
+  font-family: "Karla", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333;
+  font-family: "Karla", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-family: "Petit Formal Script", cursive;
+  line-height: 1.3;
+  margin-bottom: 0.75em;
+}
+
+h2 {
+  font-size: 2.2em;
+  line-height: 1.3333333333333333;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 2em;
+  line-height: 1;
+  margin-bottom: 0.75em;
+}
+
+h4 {
+  font-size: 1.7em;
+  line-height: 1.1428571428571428;
+  margin-bottom: 0.75em;
+}
+
+h5 {
+  font-size: 1.3em;
+  line-height: 1.3333333333333333;
+  margin-bottom: 0.5em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
+}
+
+.v65-title {
+  color: #333333;
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 0.8em;
+}
+.v65-title a {
+  color: #161616;
+}
+.v65-title a:hover, .v65-title a:focus, .v65-title a:active {
+  color: #161616;
+}
+
+.v65-subtitle {
+  color: #333333;
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+.v65-subtitle a {
+  color: #161616;
+}
+.v65-subtitle a:hover, .v65-subtitle a:focus, .v65-subtitle a:active {
+  color: #161616;
+}
+
+p, blockquote {
+  margin: 0 0 1.5em;
+  line-height: 1.5;
+}
+
+blockquote {
+  font-size: 1.2em;
+  margin: 2em auto;
+  max-width: 650px;
+  text-align: center;
+  width: 85%;
+}
+
+dl, ol, ul {
+  margin: 0 0 1.5em;
+}
+
+dd, dt, li {
+  line-height: 1.5;
+  margin: 0;
+}
+
+a {
+  color: #48bfb4;
+  text-decoration: none;
+  -ms-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+a:hover, a:focus, a:active {
+  color: #94d9d3;
+}
+
+img {
+  border: none;
+  height: auto !important;
+  max-width: 100%;
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+legend {
+  color: #161616;
+}
+
+hr {
+  background-color: #e2d04f;
+  border: 0;
+  color: #161616;
+  height: 3px;
+  margin-bottom: 3em;
+  max-width: 150px;
+  width: 75%;
+}
+
+/* Column Templates */
+
+.colWrapper { border: 1px dotted #666; margin-bottom: 2em; width: 100%; }
+.colWrapper:before,.colWrapper:after { content:""; display:table; }
+.colWrapper:after { clear:both; }
+
+.col2 { border: 1px dotted #ccc; float: left; margin-left: 6%; width: 47%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.col2:first-child { float: left; margin-left: 0%; width: 47%; }
+.col22 { border: 1px dotted #ccc; float: left; margin-left: 6%; width: 29%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.col22:first-child { margin-left: 0; width: 65%; }
+.col3 { border: 1px dotted #ccc; float: left; margin-left: 5%; width: 30%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;	box-sizing: border-box; }
+.col3:first-child { float: left; margin-left: 0%; width: 30%; }
+.col4 { border: 1px dotted #ccc; float: left; margin-left: 3%; width: 22.7%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.col4:first-child { border: 1px dotted #ccc; margin-left: 0; }
+.col2 img, .col22 img, .col4 img, .col3 img { max-width: 100% !important; height: auto !important; }
+
+/* New Global Column Templates */
+.v65-colWrapper { border: 1px dotted #666; margin-bottom: 2em; width: 100%; }
+.v65-colWrapper:before,.v65-colWrapper:after { content:""; display:table; }
+.v65-colWrapper:after { clear:both; }
+
+.v65-col2 { border: 1px dotted #ccc; float: left; margin-left: 6%; width: 47%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.v65-col2:first-child { float: left; margin-left: 0%; width: 47%; }
+.v65-col2Right { border: 1px dotted #ccc; float: left; margin-left: 6%; width: 29%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.v65-col2Right:first-child { float: left; margin-left: 0; width: 65%; }
+.v65-col2Left { border: 1px dotted #ccc; float: left; margin-right: 0; width: 65%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.v65-col2Left:first-child { float: left; margin-right: 6%; width: 29%; }
+.v65-col3 { border: 1px dotted #ccc; float: left; margin-left: 5%; width: 30%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.v65-col3:first-child { float: left; margin-left: 0%; width: 30%; }
+.v65-col4 { border: 1px dotted #ccc; float: left; margin-left: 3%; width: 22.7%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.v65-col4:first-child { border: 1px dotted #ccc; margin-left: 0; }
+.v65-col2 img, .v65-col22 img, .v65-col4 img, .v65-col3 img { max-width: 100% !important; height: auto !important; }
+
+/* Standard V65 Styles - don't remove */
+
+/* Images */
+img.v65-featureRight { border: 1px solid #ccc; float: right; padding: 3px; margin: 0 0 1em 1em; }
+img.v65-right { float: right; padding: 0; margin: 0 0 1em 1em; }
+
+img.v65-featureLeft { border: 1px solid #ccc; float: left; padding: 3px; margin: 0 1em 1em 0; }
+img.v65-left { float: left; padding: 0; margin: 0 1em 1em 0; }
+
+img.v65-border { border: 1px solid #ccc; padding: 3px; }
+
+/*Pull Quotes*/
+.v65-quoteRight { width: 33%; border: 1px solid #ccc; background-color: #eee; color: #555; font: italic 1.17em/1.5em Georgia, "Times New Roman", Times, serif; float: right; padding: 0.65em; margin: 0 0 1em 1em; }
+	.v65-quoteRight:first-letter { display:block; float: left; margin: 4px 8px 0 0; font-size: 3.2em; }
+.v65-quoteLeft { width: 33%; border: 1px solid #ccc; background-color: #eee; color: #555; font: italic 1.17em/1.5em Georgia, "Times New Roman", Times, serif; float: left; padding: 0.65em; margin: 0 1em 1em 0; }
+	.v65-quoteLeft:first-letter { display:block; float: left; margin: 4px 8px 0 0; font-size: 3.2em; }	
+
+/*Other*/
+.small 			{ font-size: 0.917em; }
+	.small a 	{ font-weight: bold; }
+.smaller 			{ font-size: 0.834em; }
+	.smaller a 	{ font-weight: bold; }

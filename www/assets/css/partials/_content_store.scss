@@ -1,0 +1,592 @@
+#v65-fieldset-wholesalerInfo, #v65-fieldset-billingInfo, 
+#v65-fieldset-shippingOptions, #v65-fieldset-shippingInfo, 
+#v65-fieldset-paymentMethod, #v65-fieldset-sourceCode, 
+#v65-fieldset-usernamePassword{
+	@media screen and (max-width: 725px){
+		width: 98%;
+	}
+}
+
+.v65-productGroup-teaser{
+	width: 100%;
+}
+
+.v65-productGroup-product{
+	&:first-child{
+		margin-left: 0;
+	}
+}
+
+.v65-productGroup{
+	.v65-clear{
+		@media screen and (max-width: 750px){
+			display: none;
+		}
+
+		&.productGroup-2Up-rowClear{
+			display: none;
+
+			@media screen and (min-width:581px) and (max-width: 599px){
+				display: block;
+			}
+		}
+
+		&.productGroup-3Up-rowClear{
+			display: none;
+		}
+	}
+}
+
+.print{
+	@media screen and (max-width: 720px){
+		margin: 0 10px;
+	}
+}
+
+// ======================================== //
+// Product Lists
+// ======================================== //
+
+.v65-product1Up .v65-product-photo {
+
+	@media screen and (max-width: 580px) {
+		margin-right: 4%;
+		width: 21%;
+	}
+	
+}
+
+.v65-product2Up .v65-product-photo {
+	margin: 0 15px;
+}
+
+.v65-product1UpStore .v65-product-photo {
+
+	@media screen and (max-width: 580px) {
+		margin-right: 3%;
+		width: 16%;
+	}
+
+}
+
+.v65-product1UpStore .v65-product-infoWrapper,
+.v65-product1UpStore .v65-product-commerceWrapper {
+
+	@media screen and (max-width: 580px) {
+		width: 81%;
+	}
+}
+.v65-product3Up {
+	@media screen and (min-width: 581px) and (max-width: 600px){ 
+	  	margin: 1em 0;
+	  	width: 100%;
+	}
+}
+
+.v65-paging, .v65-pagingBottom {
+	border: 0;
+}
+
+.v65-product2Up {
+	.v65-product-addToCart-priceWrapper {
+		display: block;
+	}
+}
+
+.v65-product1UpStore {
+	border-bottom: none;
+	margin-bottom: 1.5em;
+}
+
+.v65-productList {
+
+	th {
+		background: transparent;
+		color: $fontColor;
+	}
+
+	td {
+		border-color: $bgBorder;
+		color: $fontColor;
+
+		a {
+			color: $fontColor;
+		}
+	}
+
+	tr {
+		&:hover, &:focus, &:active {
+			background: transparent;
+		}
+	}
+
+	tr.alternatRow {
+		background: $secondaryBg;
+
+		&:hover, &:focus, &:active {
+			background: $secondaryBg;
+		}
+	}
+}
+
+.v65-productGroup-title.v65-title {
+	font-size: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+	position: relative;
+
+	&:after {
+		background-color: $underlineColor;
+		content: "";
+		position: absolute;
+		bottom: -30px;
+		left: 50%;
+		margin-left: -75px;
+		max-width: 150px;
+		height: 3px;
+		width: 75%;
+	}
+}
+
+.v65-productGroup-teaser {
+	max-width: 650px;
+	margin: 0 auto;
+	text-align: center;
+	width: 90%;
+}
+
+.v65-productGroup-products {
+
+	.v65-productGroup-product {
+		@media screen and (min-width: 601px) and (max-width: 750px){
+			width: 48%;
+		}
+	}
+
+	.v65-product-title {
+		font-size: 1.4em;
+		margin: 2em 0 0.8em;
+	}
+
+	button.defaultBtn {
+		@media screen and (min-width: 581px){
+			padding: 0;
+		}
+	}
+}
+
+	
+
+// ======================================== //
+// Checkout Forms
+// ======================================== //
+
+#v65-checkoutFormWrapper,
+#v65-clubFormWrapper {
+	legend {
+		border-top: 2px solid $underlineColor;
+		padding-top: 0.5em;
+		width: 100%;
+	}
+
+	#v65-checkoutCartSummaryWrapper,
+	#v65-signUpClubSummaryWrapper {
+		background: $secondaryBg;
+		border: 1px solid $bgBorder;
+
+		@media screen and (min-width: 726px){
+			float: right;
+			position: static;
+		}
+
+		legend {
+			border-top: 0;
+		}
+	}
+
+	#v65-checkCartSummaryMoreOptions {
+		font-size: 16px;
+		width: 100%;
+	}
+
+	#v65-checkoutCartSummaryMini {
+		width: 100%;
+
+		td {
+			font-size: 16px;
+		}
+	}
+
+	#v65-couponFormWrapper legend,
+	#v65-giftCardFormWrapper legend {
+		font-size: 16px;
+	}
+
+	#v65-couponFormWrapper,
+	#v65-giftCardFormWrapper {
+		button.modalBtn {
+			@media screen and (max-width: 385px){
+				width: 35%;
+			}
+		}
+	}
+}
+
+#v65-checkBilling {
+	max-width: 100%;
+
+	legend {
+		font-size: 1.5em;
+		letter-spacing: 0;
+	}
+
+	input[name=BillFirstName], input[name=BillLastName], input[name=BillCompany],
+	input[name=BillCity], input[name=BillMainPhone], input[name=BillEmail],
+	textarea[name=OrderNotes], input[name=BillAddress], input[name=BillAddress2],
+	input[name=NickName], input[name=ShipFirstName], input[name=ShipLastName],
+	input[name=ShipCompany], input[name=ShipCity], input[name=ShipMainPhone],
+	input[name=ShipEmail], input[name=ShipAddress], input[name=ShipAddress2], textarea[name=giftMessage],
+	input[name=FirstName], input[name=LastName], input[name=Company],
+	input[name=City], input[name=MainPhone], input[name=Email],
+	input[name=Username], input[name=Password], input[name=ConfirmPassword],
+	input[name=Address], input[name=Address2] {
+		background: #f8f8f8;
+		border: 1px solid #E7E7E7;
+		-ms-box-sizing:  border-box;
+		-moz-box-sizing:  border-box;
+		-o-box-sizing:  border-box;
+		-webkit-box-sizing:  border-box;
+		box-sizing:  border-box;
+		width: 100% !important;
+	}
+}
+
+// ======================================== //
+// Cart
+// ======================================== //
+#v65-modalCartDropdown {
+	border-color: $bgBorder;
+}
+
+#v65-modalCartBody {
+	background: $secondaryBg;
+	color: $fontColor;
+
+	#v65-modalCartTable {
+		th {
+			background-color: transparent;
+			border-color: $borderColor;
+			color: $fontColor;
+		}
+
+		td {
+			border-color: $borderColor;
+			color: $fontColor;
+		}
+
+		a {
+			color: $fontColor;
+		}
+	}
+
+	#v65-modalCartTableSubtotal td {
+		background-color: transparent;
+		border-color: $borderColor;
+		color: $fontColor;
+	}
+}
+
+#v65-cartCheckOutCoupons form {
+	width: auto;
+
+	legend {
+		font-size: 1.2em;
+	}
+}
+
+#v65-cartTable {
+	@media screen and (max-width: 400px){
+		font-size: 14px;
+	}
+
+	th, #v65-cartSubtotal td {
+		background: transparent;
+		border-color: $borderColor;
+	}
+
+	td {
+		background: transparent;
+		border-color: $borderColor;
+
+		@media screen and (max-width: 400px){
+			padding: 0.3em 0;
+		}
+	}
+
+	span.v65-cartItemDescription-sku {
+		word-break: break-word;
+	}
+}
+
+.alertYellow {
+	background-color: #FCFFD4;
+}
+
+// ======================================== //
+// Wine Clubs
+// ======================================== //
+
+.v65-club {
+	background: $secondaryBg;
+	border: 1px solid $bgBorder;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	margin: 1%;
+	padding: 4% 2%;
+	width: 48%;
+
+	@media screen and (max-width: 870px){
+		margin: 2% 0;
+		padding: 6% 4%;
+		width: 100%;
+	}
+
+	.v65-clubTitle {
+		margin-bottom: 1.5em;
+		text-align: center;
+		position: relative;
+
+		&:after {
+			content: "";
+			border-bottom: 2px dotted $underlineColor;
+			height: 2px;
+			margin-left: -50px;
+			position: absolute;
+			bottom: -20px;
+			left: 50%;
+			width: 100px;
+		}
+	}
+
+	.v65-clubTeaser {
+		border-bottom: 0;
+		margin-bottom: 0;
+  		padding: 0;
+	}
+
+	.v65-clubJoin {
+		text-align: center;
+	}
+}
+
+.clubSignupTitle {
+	font-family: $fontFamily;
+	font-size: 2em;
+}
+
+// ======================================== //
+// Homepage Product Group
+// ======================================== //
+
+.homepageProductGroup {
+	.v65-clear {
+		display: none;
+	}
+
+	.v65-productGroup {
+		margin-bottom: 0;
+	}
+
+	.v65-productGroup-title,
+	.v65-productGroup-teaser {
+		display: none;
+	}
+
+	.v65-productGroup-teaser {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	.v65-productGroup-product {
+		border-left: 1px solid $bgBorder;
+		border-bottom: 1px solid $bgBorder;
+		-ms-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 6em 2%;
+		width: 33.33%;
+
+		@media screen and (max-width: 940px){
+			width: 100%;
+		}
+
+		&:first-child {
+			border-left: 0;
+		}
+	}
+
+	.v65-productGroup-products > div:first-child + div,
+	.v65-productGroup-products > div:first-child + div + div + div + div + div,
+	.v65-productGroup-products > div:first-child + div + div + div + div + div + div + div + div + div {
+		background-color: $secondaryBg;
+	}
+}
+
+// ======================================== //
+// Product Drilldown
+// ======================================== //
+
+.v65-productWrapper {
+	padding: 3em 0;
+
+	h1 {
+		float: none;
+		margin-bottom: 2em;
+		width: 100%;
+		text-align: center;
+
+		.v65-product-subtitle {
+			font-size: 0.4em;
+		}
+	}
+
+	.v65-product-leftCol {
+		width: 28%;
+
+		@media screen and (max-width: 767px){
+			width: 100%;
+		}
+
+		.v65-product-photo img {
+			@media screen and (max-width: 767px){
+				max-height: 400px;
+			}
+		}
+	}
+
+	.v65-product-rightCol {
+		background: $secondaryBg;
+		border: 1px solid $bgBorder;
+		-ms-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 4%;
+		width: 67%;
+
+		@media screen and (max-width: 767px){
+			width: 100%;
+		}
+	}
+
+	.v65-product-socialBar {
+		margin: 1em 0;
+	}
+
+	.bottomProductDetails {
+		border-top: 1px solid $bgBorder;
+		float: left;
+		margin-top: 2em;
+		padding-top: 2em;
+		width: 100%;
+
+		@media screen and (min-width: 676px){
+			margin-top: 7em;
+		}
+
+		.productRightCol {
+			margin-top: 2em;
+
+			@media screen and (min-width: 676px){
+				float: left;
+				margin-top: 0;
+				margin-right: 6%;
+				width: 27%;
+			}	
+		}
+
+		.productLeftCol {
+			margin-top: 2em;
+
+			@media screen and (min-width: 676px){
+				float: left;
+				margin-top: 0;
+				width: 67%;
+			}
+		}
+	}
+
+	.v65-wine-specs {
+		margin: 1em 0;
+
+		.v65-wine-specs-title.v65-title {
+			font-size: 1.3em;
+		}
+
+		.v65-product-attributeLabel,
+		.v65-product-attributeValue {
+			margin-bottom: 0.5em;
+			width: auto;
+		}
+	}
+
+	.v65-wine-profile {
+		margin: 1em 0;
+
+		.v65-wine-profile-title.v65-title {
+			font-size: 1.3em;
+		}
+
+		.v65-product-attributeLabel {
+			font-size: 1em;
+			margin: 1em 0 0.7em;
+		}
+	}
+}
+
+.productReviews {
+	border-top: 1px solid $bgBorder;
+	margin-top: 4em;
+	padding-top: 2em;
+
+	.v65-ProductRating {
+		@media screen and (min-width: 951px){
+			float: left;
+			margin-right: 6%;
+		  	width: 27%;
+		}	
+	}
+
+	.v65-product-reviews {
+
+		@media screen and (min-width: 951px){
+			float: right;
+			width: 67%;
+		}
+
+		.v65-product-review-wrapper {
+			border-color: $bgBorder;
+		}
+	}
+}
+
+form#v65-addProductReview {
+
+	fieldset, div {
+		margin: 0;
+		padding: 5px 1px;
+	}
+
+	legend {
+		font-size: 1.2em;
+		padding: 5px 1px;
+	}
+}

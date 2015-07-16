@@ -1,0 +1,32 @@
+// ===================================== //
+// ========== Dark and Orange ========== //
+// ===================================== //
+
+$orange: #dd7753;
+$darkOrange: #b85434;
+$teal: #8DE1B8;
+$beige: #776B5C;
+
+
+$underlineColor: $teal;
+$linkColor: $orange;
+$fontColor: $offWhite;
+
+$primaryBg: $secondDarkGrey;
+$secondaryBg: $darkGrey;
+$thirdBg: $secondDarkGrey;
+$bgBorder: #282828;
+$headingFontColor: $white;
+$borderColor: lighten($primaryBg, 5%);
+
+$mainButtonColor: $orange;
+$mainButtonHover: darken($orange, 10%);
+$altButtonColor: #555;
+$altButtonHover: darken($altButtonColor, 10%);
+
+$footerBg: $darkGrey;
+
+//Mobile
+$userToolsBg: $secondDarkGrey;
+$userToolsColor: $white;
+$userToolsBorder: lighten($secondDarkGrey, 5%);

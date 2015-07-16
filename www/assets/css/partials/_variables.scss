@@ -1,0 +1,113 @@
+// Global Fonts
+$georgia: Georgia, serif;
+$lucida: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;	
+$karla: 'Karla', sans-serif;
+$pacifico: 'Pacifico', cursive;
+$petitFormal: 'Petit Formal Script', cursive;
+
+// Global Variables
+$fontFamily: $karla;
+// $headingFontFamily: $baskerville;
+$headingFontFamily: $karla;
+
+.hideText{
+	overflow:hidden;
+	text-indent:100%;
+	white-space:nowrap;
+	
+	a{
+		display:block;
+		height:100%;
+	}
+}
+
+// Colors //
+
+$grey-dark: #333;
+$blue-light: #3b73ac;
+$blue-dark: #2e5b87;
+
+$white: #fff;
+$offWhite: #f3f4f4; 
+$grey: #575757;
+$lightGrey: #ccc;
+$darkGrey: #1d1d1d;
+$secondDarkGrey: #222222;
+$black: #000;
+$offBlack: #161616;
+
+$green: #48bfb4;
+$blue: #243d50;
+$yellow: #e2d04f;
+
+
+// ===================================== //
+// ========== Color Schemes ============ //
+// ===================================== //
+
+
+@import 'themes/themeSettings_default';
+// @import 'themes/themeSettings_black';
+
+
+
+// ===================================== //
+// ============== Global =============== //
+// ===================================== //
+
+$backgroundColor: $primaryBg;
+$topBarColor: $black;
+
+// Navigation Colors
+$navLinkColor: $white; //Font Color for main navigation
+$navLinkHover: $lightGrey; //Font Hover for main navigation
+
+$navSelected: $white;
+$subNavLinkColor: $white; //Font Color for sub navigation
+$subNavLinkHover: $lightGrey; //Font Color for sub navigation hover
+$subNavBackgroundColor: $black; //Background Color for sub navigation
+$leftNavSelected: $black;   
+
+$mobileNavBg: #1D1D1D;
+
+// Footer Colors
+$footerColor: #777777;
+$footerLink: #777777;
+$footerLinkHover: lighten($footerLink, 25%);
+
+// Logo Settings
+$logo: 'logo.png';
+$logo-retina: 'logo@2x.png';
+
+
+@mixin gradient($color1, $color2){
+	background-color: $color1;
+	background-image: -webkit-linear-gradient(top, $color1, $color2);
+	background-image: -moz-linear-gradient(top, $color1, $color2);
+	background-image: -ms-linear-gradient(top, $color1, $color2);
+	background-image: -o-linear-gradient(top, $color1, $color2);
+	background-image: linear-gradient(top, $color1, $color2);
+}
+
+@mixin boxSizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+// Button Colors
+// @mixin mainButtonColor() {
+// 	@include gradient($blue-light, $blue-dark); // Main Button Color
+// } 
+
+// @mixin mainButtonHover() {
+// 	@include gradient(lighten($blue-light, 5%), lighten($blue-dark, 5%));
+// } 
+
+// @mixin altButtonColor() {
+// 	@include gradient($lightGrey, $grey-dark); // Main Button Color
+// } 
+
+// @mixin altButtonHover() {
+// 	@include gradient(lighten($lightGrey, 5%), lighten($grey-dark, 5%));
+// } 

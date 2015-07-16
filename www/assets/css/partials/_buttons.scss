@@ -1,0 +1,147 @@
+button {
+	span{
+		padding: 0 1em;
+		-webkit-font-smoothing: initial;
+	}
+
+	&.defaultBtn,  &.modalBtn,  &.largeBtn{
+		background: $mainButtonColor;
+		border-radius: 3px;
+		text-decoration: none;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+		-ms-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			background: $mainButtonHover;
+		}
+	}
+
+	&.defaultBtn, &.largeBtn {
+		@media screen and (min-width: 581px){
+			height: 3em;
+			line-height: 3em;
+			padding: 0 1.5em;
+		}
+	}
+
+	&.modalBtn span {
+		padding: 0 5px;
+	}
+
+	&.modalBtn, &.altModalBtn{
+		font-size: 13px;
+		line-height: inherit;
+
+		-ms-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+	}
+
+	&.altBtn, &.altModalBtn, &.altLargeBtn{
+		background: $altButtonColor;
+		border-radius: 3px;
+		text-decoration: none;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+		-ms-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			background: $altButtonHover;
+		}
+	}
+}
+
+a{
+	span{
+		padding: 0 1em;
+		height: auto;
+		line-height: inherit;
+		-webkit-font-smoothing: initial;
+	}
+	
+	&.linkBtn, &.modalLinkBtn, &.largeLinkBtn{
+		background: $mainButtonColor;
+		border-radius: 3px;
+		text-decoration: none;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+		-ms-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			background: $mainButtonHover;
+		}
+	}
+
+	&.linkBtn {
+		@media screen and (min-width: 581px){
+			height: 3em;
+			line-height: 3em;
+			padding: 0 1.5em;
+		}
+	}
+
+	&.linkAltBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		background: $altButtonColor;
+		border-radius: 3px;
+		text-decoration: none;
+		vertical-align: middle;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+		-ms-transition: all 0.2s ease;
+		-moz-transition: all 0.2s ease;
+		-o-transition: all 0.2s ease;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		
+		span{
+			background: none;
+			height: auto;
+			line-height: inherit;
+		}
+
+		&:hover, &:active{
+			background: $altButtonHover;
+		}
+	}
+
+	&.modalLinkBtn, &.modalLinkAltBtn, &.modalLinkAltBtn{
+		min-width: auto;
+	}
+}
+

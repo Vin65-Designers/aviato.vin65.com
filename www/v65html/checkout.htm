@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<v65:metaTags></v65:metaTags>
+
+	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+
+	<!--//Vin65 QuickLaunch//-->
+	<script type="text/javascript" src="http://quicklaunch.vin65.com/quicklaunch.js"></script>
+	<!--//Vin65 QuickLaunch//-->
+
+	<link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script|Karla:400,400italic,700' rel='stylesheet' type='text/css'>
+
+	<v65:css files="/assets/css/screen.min.css"></v65:css>
+	
+	<!--[if lt IE 9]>
+		<script src="/assets/js/html5shiv-printshiv.js"></script>
+		<script src="/assets/js/respond.min.js"></script>
+
+		<style type="text/css">
+			.contentSection, .headerContent {
+				visibility: visible !important;
+			}
+
+			header.primary .headerSearch, .icon-search {
+				display: none !important;
+			}
+		</style>
+	<![endif]-->
+
+</head>
+<body>
+
+	<header class="pageBackground v65-group primary pageHeader imagePreloader" <v65:contentBlock group="Page Background">>
+		<div class="overlay"></div>
+
+		<div class="headerSearch">
+			<div class="wideWrapper">
+				<v65:contentSearch buttonText=""></v65:contentSearch>
+				<i class="icon-cross"></i>
+			</div>
+		</div>
+
+		<div class="wideWrapper">
+			<h1 class="logo hideText">
+				<a href="/" accesskey="h"><v65:websiteName></v65:websiteName></a>
+			</h1>
+			
+			<nav class="mainMenu">
+				
+			</nav>
+
+			<div class="pageTitle">
+				<h1><v65:pageTitle></v65:pageTitle></h1>
+			</div>
+		</div>
+	</header>
+
+	<article class="content pageContent v65-group">		
+		<a class="backToTop" href="#"><i class="icon-up-bold"></i></a>
+		<div class="contentWrapper">
+			<v65:mainContent></v65:mainContent>
+		</div>
+	</article><!--/contentWide-->
+
+	<footer class="v65-group">
+		<div class="wideWrapper">
+			<div class="footerSection">
+				<h3><v65:pods location="Footer Left Title" type="title"></v65:pods></h3>
+				<nav>
+					<v65:layoutFooterNav></v65:layoutFooterNav>
+				</nav>
+			</div>
+
+			<div class="footerSection">
+				<h3><v65:pods location="Footer Middle Content" type="title"></v65:pods></h3>
+				<v65:pods location="Footer Middle Content" type="description"></v65:pods>
+				<v65:customFile file="/v65html/_social.html"></v65:customFile>
+			</div>
+
+			<div class="footerSection">
+				<h3><v65:pods location="Footer Right Content" type="title"></v65:pods></h3>
+				<v65:pods location="Footer Right Content" type="description"></v65:pods>
+			</div>
+				
+
+			<div class="legal"> 
+				<v65:copyright></v65:copyright><br/>
+				<v65:vin65Accolade></v65:vin65Accolade>
+			</div><!--/footerTools-->
+		</div>
+	</footer>
+
+	<v65:js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/jquery.matchHeight-min.js,/assets/js/wow.min.js"></v65:js>
+
+	<!--//Vin65 QuickLaunchFooter//-->
+	<script src="http://assets.vin65.com/js/vin65Footer.js" type="text/javascript"></script>
+	<!--//Vin65 QuickLaunchFooter//-->
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+html {
+	font-size: 100%;
+}
+
+body{
+	background-color: $backgroundColor;
+	color: $fontColor;
+	font-family: $fontFamily;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $headingFontColor;
+	font:{
+		family: $headingFontFamily;
+		weight: normal;
+	}
+	margin: 0;
+}
+
+h1 {
+	font-size: 2.5em;
+	font-family: $petitFormal;
+	line-height: 1.3;
+	margin-bottom: 0.75em;
+
+	@media screen and (max-width: 580px){
+		font-size: 2.3em;
+	}
+}
+
+h2 {
+	font-size: 2.2em;
+	line-height: 1.3333333333333333;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font-size: 2em;
+	line-height: 1;
+	margin-bottom: 0.75em;
+}
+
+h4 {
+	font-size: 1.7em;
+	line-height: 1.1428571428571428;
+	margin-bottom: 0.75em;
+}
+
+h5 {
+	font-size: 1.3em;
+	line-height: 1.3333333333333333;
+	margin-bottom: 0.5em;
+}
+
+h6 {
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 1.5;
+	margin-bottom:0.5em;
+}
+
+.v65-title { 
+	color: $headingFontColor;
+	font:{
+		size: 1.5em;
+		weight: normal;
+	}
+	line-height: 1;
+	margin-bottom: 0.8em;
+
+	a {
+		color: $fontColor;
+
+		&:hover, &:focus, &:active {
+			color: $fontColor;
+		}
+	}
+}
+
+.v65-subtitle {
+	color: $headingFontColor;
+	font:{
+		size: 1.2em;
+		weight: normal;
+	}
+	line-height: 1;
+	margin-bottom: 1em;
+
+	a {
+		color: $fontColor;
+
+		&:hover, &:focus, &:active {
+			color: $fontColor;
+		}
+	}
+}
+
+p, blockquote {
+	margin: 0 0 1.5em;
+	line-height: 1.5;
+}
+
+blockquote {
+	font-size: 1.2em;
+	font-family: $petitFormal;
+	margin: 2em auto;
+	max-width: 650px;
+	text-align: center;
+	width: 85%;
+}
+
+dl, ol, ul {
+	margin: 0 0 1.5em;
+}
+
+dd, dt, li {
+	line-height: 1.5;
+	margin: 0;
+}
+
+a{
+	color: $linkColor;
+	text-decoration: none;
+	-ms-transition: color 0.2s ease;
+	-moz-transition: color 0.2s ease;
+	-o-transition: color 0.2s ease;
+	-webkit-transition: color 0.2s ease;
+	transition: color 0.2s ease;
+
+	&:hover, &:focus, &:active{
+		color: lighten($linkColor, 20%);
+	}
+}
+
+img{
+	border:none;
+	height: auto !important;
+	max-width: 100%;
+}
+
+form {
+	margin-bottom: 1em;
+}
+
+legend {
+	color: $fontColor;
+}
+
+hr {
+	background-color: $underlineColor;
+	border: 0;
+	color: $fontColor;
+	height: 3px;
+	margin-bottom: 3em;
+	max-width: 150px;
+	width: 75%;
+}
+
+a[name=footerNav]{
+	display: none !important;
+}

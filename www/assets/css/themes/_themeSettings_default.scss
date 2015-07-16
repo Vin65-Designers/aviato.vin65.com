@@ -1,0 +1,26 @@
+// ===================================== //
+// ========== White and Green ========== //
+// ===================================== //
+
+$underlineColor: $yellow;
+$linkColor: $green;
+$fontColor: $offBlack;
+
+$primaryBg: $white;
+$secondaryBg: $offWhite;
+$thirdBg: $blue;
+$bgBorder: #edecec;
+$headingFontColor: $grey-dark;
+$borderColor: darken($primaryBg, 10%);
+
+$mainButtonColor: $green;
+$mainButtonHover: darken($green, 10%);
+$altButtonColor: #898989;
+$altButtonHover: darken($altButtonColor, 10%);
+
+$footerBg: $offBlack;
+
+//Mobile
+$userToolsBg: $white;
+$userToolsColor: $black;
+$userToolsBorder: $offWhite;

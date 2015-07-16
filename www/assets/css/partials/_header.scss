@@ -1,0 +1,268 @@
+header.primary{
+	-ms-behavior: url(/backgroundsize.min.htc);
+  	behavior: url(/backgroundsize.min.htc);
+	background:{
+		position: center;
+		repeat: no-repeat;
+	}
+	position: relative;
+	width: 100%;
+	z-index: 10;
+
+	@media screen and (min-width: 951px){
+		overflow: hidden;
+	}
+
+	@media screen and (min-width: 651px){
+		background-size: cover;
+	}
+
+	&.homepageHeader {
+		min-height: 750px;
+
+		@media screen and (min-width: 900px){
+			height: 100vh; 
+		}
+
+		@media screen and (max-width: 580px){
+			min-height: 600px;
+		}
+	}
+
+	#user-tools {
+		font:{
+			size: 15px;
+			style: italic;
+		}
+
+		@media screen and (max-width: 580px){
+			background-color: $userToolsBg;
+			border-bottom: 1px solid $userToolsBorder;
+			color: $userToolsColor;
+		}
+
+		a {
+			color: $navLinkColor;
+			-ms-transition: none;
+			-moz-transition: none;
+			-webkit-transition: none;
+			transition: none;
+
+			@media screen and (max-width: 580px){
+				color: $userToolsColor;
+			}
+		}
+		
+		.v65-yourAccount, .v65-editProfile,
+		.v65-login, .v65-logout {
+			border-color: $userToolsBorder;
+		}
+	}
+
+	.logo{
+		background:{
+			image: image-url($logo);
+			position: top center;
+			repeat: no-repeat;
+		}
+		background-size: contain;
+		display: block;
+		float: left;
+		height: 180px;
+		margin-bottom: 0;
+		position: relative;
+		width: 280px;
+
+		a {
+			-ms-transition: none;
+			-moz-transition: none;
+			-o-transition: none;
+			-webkit-transition: none;
+			transition: none;
+		}
+
+		&.errorLogo{
+			float: none;
+		}
+
+		@media screen and (-webkit-min-device-pixel-ratio: 1.5),	(min-device-pixel-ratio: 1.5){
+			background-image: image-url($logo-retina);
+		}
+
+		@media screen and (max-width: 580px){
+			height: 148px;
+			width: 230px;
+		}
+	}
+
+	// ======================================== //
+	// Header Content
+	// ======================================== //
+
+	&.pageHeader {
+		min-height: 475px;
+
+		@media screen and (max-width: 580px){
+			min-height: 420px;
+		}
+
+		.pageTitle {
+			float: left;
+			text-align: center;
+			position: relative;
+			padding: 0 2.5%;
+			width: 95%;
+
+			h1 {
+				color: #fff;
+				font-size: 5em;
+				line-height: 1.2;
+				margin: 0.3em auto 1em;
+				max-width: 1050px;
+
+				@media screen and (max-width: 1400px){
+					font-size: 4em;
+  					margin: 0.7em auto 1em;
+				}
+
+				@media screen and (max-width: 580px){
+					font-size: 2.6em;
+					margin: 0.7em auto 2em;
+				}
+
+				@media screen and (max-width: 400px){
+					word-break: break-word;
+				}
+			}
+		}
+	}
+
+	// ======================================== //
+	// Search
+	// ======================================== //
+
+	.headerSearch {
+		background: url('../images/header-overlay.png');
+		background: rgba(0,0,0,0.5);
+		display: none;
+		width: 100%;
+		z-index: 500;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		transition: all 0.2s ease;
+
+		transform: translate(0, -100%);
+		-webkit-transform: translate(0, -100%);
+		-moz-transform: translate(0, -100%);
+		-ms-transform: translate(0, -100%);
+
+		.icon-cross {
+			color: #fff;
+			cursor: pointer;
+			display: none;
+			font-size: 1.3em;
+			position: absolute;
+			top: 0.85em;
+			right: 0;
+
+			@media screen and (min-width: 950px){
+				display: block;
+				top: 0.9em;
+			}
+		}
+	}
+
+	.headerSearch, .mobileSearch {
+		form {
+			margin: 0.4em 0 0.2em;
+
+			input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'] {
+				background: transparent;
+				border: 0;
+				border-bottom: 1px solid #fff;
+				color: #fff;
+				font-family: $headingFontFamily;
+				margin-right: 10px;
+				outline: none;
+
+				@media screen and (min-width: 951px){
+					width: 300px;
+				}
+
+				@media screen and (min-width: 581px){
+					line-height: 2.4em;
+					height: 2.4em;
+				}
+			}
+
+			fieldset {
+				border: 0;
+				text-align: center;
+			}
+		}
+
+		button.defaultBtn {
+			@media screen and (min-width: 581px){
+				height: 2.5em;
+				line-height: 2.5em;
+			}
+		}
+
+		#v65-contentSearchInput, 
+		#v65-contentSearchButton {
+			display: inline-block;
+		}
+
+		button.searchFieldButton {
+			background: transparent;
+			outline: none;
+			padding: 0;
+
+			.icon-search {
+				font-size: 1.7em;
+				padding: 0;
+			}
+		}
+	}
+
+	.mobileSearch {
+  		border-top: 1px solid #252525;
+  		margin: 1.5em 5% 0;
+  		padding: 0.6em 0 1em;
+
+		@media screen and (min-width: 951px){
+			display: none;
+		}
+
+		fieldset {
+			@media screen and (max-width: 580px){
+				padding: 0;
+			}
+		}
+	}
+
+	.searchOpen {
+		transform: translate(0, 0);
+		-webkit-transform: translate(0, 0);
+		-moz-transform: translate(0, 0);
+		-ms-transform: translate(0, 0);
+	}
+
+	.searchButton {
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		padding-left: 10px;
+
+		@media screen and (max-width: 950px){
+			display: none;
+		}
+	}
+}
