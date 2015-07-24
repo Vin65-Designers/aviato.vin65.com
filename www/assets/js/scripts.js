@@ -210,6 +210,8 @@
 				$('.v65-productGroup-product').matchHeight();
 			});
 
+			$('.v65-club').matchHeight();
+
 			$('.topContentSectionWrapper').each(function(){
 				$('.topContentSection.width-one-third').matchHeight();
 				$('.topContentSection.width-half').matchHeight();
