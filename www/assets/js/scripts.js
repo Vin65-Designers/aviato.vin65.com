@@ -195,20 +195,10 @@
 			      $(this).text('');
 			   }
 			});
-
-			// Fade in homepage header content
-			// if($(window).width() > 950){
-			// 	setTimeout(function(){
-			// 		$('.headerContent').addClass('moveUp');
-			// 	}, 200);
-			// }
 				
 		},
 		equalizeSections : function(){
-			//Equalize Homepage Products
-			$('.v65-productGroup-products').each(function(){
-				$('.v65-productGroup-product').matchHeight();
-			});
+			$('.v65-productGroup-product').matchHeight();
 
 			$('.v65-club').matchHeight();
 
