@@ -193,6 +193,7 @@
 			$('.pageTitle h1').each(function(){
 				if(($(this).text() === "PageTitle")){
 			      $(this).text('');
+			      $('body').css('position', 'static');
 			   }
 			});
 				
