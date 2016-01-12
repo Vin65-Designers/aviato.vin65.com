@@ -893,6 +893,9 @@ header.primary #user-tools .v65-yourAccount, header.primary #user-tools .v65-edi
 header.primary #user-tools .v65-login, header.primary #user-tools .v65-logout {
   border-color: #f3f4f4;
 }
+header.primary #user-tools .v65-additionalItemsMessage a {
+  color: #000;
+}
 header.primary .logo {
   background-image: url('../images/logo.png?1437756742');
   background-position: top center;
@@ -916,7 +919,7 @@ header.primary .logo a {
 header.primary .logo.errorLogo {
   float: none;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5) {
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   header.primary .logo {
     background-image: url('../images/logo@2x.png?1437756763');
   }
