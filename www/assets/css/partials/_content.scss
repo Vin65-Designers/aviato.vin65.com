@@ -927,6 +927,10 @@
   animation-name: slideOutUp;
 }
 
+#v65-modalContentWrapper,
+#v65-modalContentHeader {
+  background: $primaryBg;
+}
 
 /* ----- a. Homepage Styles ----- */
 @import 'content_home';

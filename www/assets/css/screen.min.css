@@ -2335,6 +2335,11 @@ header.primary .searchButton {
   animation-name: slideOutUp;
 }
 
+#v65-modalContentWrapper,
+#v65-modalContentHeader {
+  background: white;
+}
+
 /* ----- a. Homepage Styles ----- */
 .homepageContent {
   background-color: #243d50;
