@@ -398,14 +398,15 @@ table {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../font/icomoon.eot?-ki765d");
-  src: url("../font/icomoon.eot?#iefix-ki765d") format("embedded-opentype"), url("../font/icomoon.woff?-ki765d") format("woff"), url("../font/icomoon.ttf?-ki765d") format("truetype"), url("../font/icomoon.svg?-ki765d#icomoon") format("svg");
+  src: url("../font/icomoon.eot?dr07wn");
+  src: url("../font/icomoon.eot?dr07wn#iefix") format("embedded-opentype"), url("../font/icomoon.ttf?dr07wn") format("truetype"), url("../font/icomoon.woff?dr07wn") format("woff"), url("../font/icomoon.svg?dr07wn#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'icomoon';
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -417,12 +418,36 @@ table {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-share:before {
-  content: "\e61c";
+.icon-delectable:before {
+  content: "\e903";
 }
 
-.icon-search:before {
-  content: "\e036";
+.icon-link:before {
+  content: "\e005";
+}
+
+.icon-clock:before {
+  content: "\e014";
+}
+
+.icon-comments:before {
+  content: "\e076";
+}
+
+.icon-arrow-left:before {
+  content: "\e094";
+}
+
+.icon-arrow-right:before {
+  content: "\e095";
+}
+
+.icon-up-bold:before {
+  content: "\e096";
+}
+
+.icon-arrow-down:before {
+  content: "\e097";
 }
 
 .icon-plus:before {
@@ -433,88 +458,96 @@ table {
   content: "\e115";
 }
 
-.icon-cross:before {
-  content: "\e117";
-}
-
 .icon-menu:before {
   content: "\e120";
 }
 
-.icon-play:before {
-  content: "\e606";
+.icon-person:before {
+  content: "\e7fd";
 }
 
-.icon-date:before {
-  content: "\e950";
+.icon-search:before {
+  content: "\e8b6";
 }
 
-.icon-comments:before {
-  content: "\e96e";
-}
-
-.icon-link:before {
-  content: "\e9cb";
-}
-
-.icon-acrobat:before {
-  content: "\f1c1";
-}
-
-.icon-down-bold:before {
-  content: "\e60c";
-}
-
-.icon-up-bold:before {
-  content: "\e601";
-}
-
-.icon-chevron-thin-down:before {
-  content: "\e60a";
-}
-
-.icon-chevron-thin-up:before {
-  content: "\e60b";
-}
-
-.icon-location:before {
-  content: "\e609";
-}
-
-.icon-yelp:before {
-  content: "\e60f";
-}
-
-.icon-facebook:before {
-  content: "\e610";
-}
-
-.icon-gplus:before {
-  content: "\e60e";
-}
-
-.icon-instagram:before {
-  content: "\e60d";
-}
-
-.icon-linkedin:before {
-  content: "\e611";
-}
-
-.icon-pinterest:before {
-  content: "\e604";
+.icon-settings:before {
+  content: "\e8b8";
 }
 
 .icon-twitter:before {
-  content: "\e608";
+  content: "\f099";
 }
 
-.icon-vimeo:before {
-  content: "\e605";
+.icon-facebook:before {
+  content: "\f09a";
+}
+
+.icon-linked-in:before {
+  content: "\f0e1";
 }
 
 .icon-youtube:before {
-  content: "\e607";
+  content: "\f167";
+}
+
+.icon-instagram:before {
+  content: "\f16d";
+}
+
+.icon-tumblr:before {
+  content: "\f173";
+}
+
+.icon-vine:before {
+  content: "\f1ca";
+}
+
+.icon-cc-visa:before {
+  content: "\f1f0";
+}
+
+.icon-cc-mastercard:before {
+  content: "\f1f1";
+}
+
+.icon-cc-discover:before {
+  content: "\f1f2";
+}
+
+.icon-cc-amex:before {
+  content: "\f1f3";
+}
+
+.icon-cc-paypal:before {
+  content: "\f1f4";
+}
+
+.icon-cc-stripe:before {
+  content: "\f1f5";
+}
+
+.icon-trip-advisor:before {
+  content: "\f262";
+}
+
+.icon-vimeo:before {
+  content: "\f27d";
+}
+
+.icon-snapchat:before {
+  content: "\f2ac";
+}
+
+.icon-gplus:before {
+  content: "\e900";
+}
+
+.icon-pinterest:before {
+  content: "\e901";
+}
+
+.icon-yelp:before {
+  content: "\e902";
 }
 
 /*
@@ -897,7 +930,7 @@ header.primary #user-tools .v65-additionalItemsMessage a {
   color: #000;
 }
 header.primary .logo {
-  background-image: url('../images/logo.png?1437756742');
+  background-image: url('../images/logo.png?1465851085');
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -921,7 +954,7 @@ header.primary .logo.errorLogo {
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   header.primary .logo {
-    background-image: url('../images/logo@2x.png?1437756763');
+    background-image: url('../images/logo@2x.png?1465851085');
   }
 }
 @media screen and (max-width: 580px) {
