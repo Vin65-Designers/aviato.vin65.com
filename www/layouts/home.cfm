@@ -71,7 +71,7 @@
 	</header>
 
 	<div class="homepageProductGroup">
-		<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
+		<a class="backToTop" href="##"><i class="icon-arrow-up"></i></a>
 		<cf_product_group code="HomepageProductGroup">
 	</div>
 

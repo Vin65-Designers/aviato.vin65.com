@@ -72,7 +72,7 @@
 	</header>
 	
 	<section class="content pageContent v65-group">
-		<a class="backToTop" href="##"><i class="icon-up-bold"></i></a>
+		<a class="backToTop" href="##"><i class="icon-arrow-up"></i></a>
 		<div class="wrapper">
 			<div class="blogContent">
 				<cf_mainContent>

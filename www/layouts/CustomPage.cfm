@@ -59,7 +59,7 @@
 			<i class="icon-menu"></i>
 			<nav class="mainMenu">
 				<cf_layoutHeaderNav depth="2">
-				<div class="searchButton"><i class="icon-search"></i></div>
+				<a class="backToTop" href="##"><i class="icon-arrow-up"></i></a>
 				<div class="mobileSearch">
 					<cf_contentSearch buttonText="">
 				</div>
