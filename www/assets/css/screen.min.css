@@ -906,6 +906,7 @@ header.primary.homepageHeader {
 header.primary #user-tools {
   font-size: 15px;
   font-style: italic;
+  width: auto;
 }
 @media screen and (max-width: 580px) {
   header.primary #user-tools {
@@ -930,8 +931,32 @@ header.primary #user-tools .v65-yourAccount, header.primary #user-tools .v65-edi
 header.primary #user-tools .v65-login, header.primary #user-tools .v65-logout {
   border-color: #f3f4f4;
 }
+@media screen and (min-width: 581px) {
+  header.primary #user-tools .v65-yourAccount, header.primary #user-tools .v65-editProfile,
+  header.primary #user-tools .v65-login, header.primary #user-tools .v65-logout {
+    width: auto;
+  }
+}
 header.primary #user-tools .v65-additionalItemsMessage a {
   color: #000;
+}
+header.primary #user-tools .v65-pointsBalance {
+  display: inline-block;
+  padding-right: 1em;
+}
+@media screen and (max-width: 580px) {
+  header.primary #user-tools .v65-pointsBalance {
+    display: none;
+  }
+}
+header.primary #user-tools #v65-modalCart {
+  position: static;
+}
+@media screen and (min-width: 581px) {
+  header.primary #user-tools #v65-modalCart {
+    display: inline-block;
+    padding-left: 1em;
+  }
 }
 header.primary .logo {
   background-image: url('../images/logo.png?1465851085');
@@ -1437,6 +1462,7 @@ header.primary .searchButton {
 
 .mobileBody {
   position: fixed;
+  width: 100%;
 }
 
 /*   ===================================================================================================
@@ -2887,9 +2913,23 @@ a.linkBtn.headerBtn {
   }
 }
 
-input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'] {
+input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], input[type='number'] {
   background: #f8f8f8;
   border: 1px solid #E7E7E7;
+}
+
+input[type='number'] {
+  height: 2.5em;
+  line-height: 2.5em;
+  min-width: 3em;
+  padding: 0 0.5em;
+}
+@media screen and (max-width: 580px) {
+  input[type='number'] {
+    height: 4em;
+    line-height: 4em;
+    min-width: 3em;
+  }
 }
 
 .v65-form {
@@ -2903,7 +2943,7 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
   font-size: 1.5em;
   margin-bottom: 0.5em;
 }
-.v65-form input[type=text], .v65-form input[type=password], .v65-form input[type='username'], .v65-form textarea {
+.v65-form input[type=text], .v65-form input[type=password], .v65-form input[type='username'], .v65-form textarea, .v65-form input[type='number'] {
   background: #f8f8f8;
   border: 1px solid #E7E7E7;
   -ms-box-sizing: border-box;
@@ -2914,21 +2954,23 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
   width: 100%;
 }
 
-.v65-product-addToCart-quantity input[type='text'], .v65-product-addToCart-quantity input[type='password'], .v65-product-addToCart-quantity input[type='username'], .v65-product-addToCart-quantity input[type='tel'], .v65-product-addToCart-quantity input[type='email'],
+.v65-product-addToCart-quantity input[type='text'], .v65-product-addToCart-quantity input[type='password'], .v65-product-addToCart-quantity input[type='username'], .v65-product-addToCart-quantity input[type='tel'], .v65-product-addToCart-quantity input[type='email'], .v65-product-addToCart-quantity input[type='number'],
 .subscribeSection input[type='text'],
 .subscribeSection input[type='password'],
 .subscribeSection input[type='username'],
 .subscribeSection input[type='tel'],
-.subscribeSection input[type='email'] {
+.subscribeSection input[type='email'],
+.subscribeSection input[type='number'] {
   border-color: #e4e4e4;
 }
 @media screen and (min-width: 581px) {
-  .v65-product-addToCart-quantity input[type='text'], .v65-product-addToCart-quantity input[type='password'], .v65-product-addToCart-quantity input[type='username'], .v65-product-addToCart-quantity input[type='tel'], .v65-product-addToCart-quantity input[type='email'],
+  .v65-product-addToCart-quantity input[type='text'], .v65-product-addToCart-quantity input[type='password'], .v65-product-addToCart-quantity input[type='username'], .v65-product-addToCart-quantity input[type='tel'], .v65-product-addToCart-quantity input[type='email'], .v65-product-addToCart-quantity input[type='number'],
   .subscribeSection input[type='text'],
   .subscribeSection input[type='password'],
   .subscribeSection input[type='username'],
   .subscribeSection input[type='tel'],
-  .subscribeSection input[type='email'] {
+  .subscribeSection input[type='email'],
+  .subscribeSection input[type='number'] {
     height: 2.85em;
     line-height: 2.85em;
   }
@@ -3213,8 +3255,10 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
 }
 #v65-checkoutFormWrapper #v65-couponFormWrapper legend,
 #v65-checkoutFormWrapper #v65-giftCardFormWrapper legend,
+#v65-checkoutFormWrapper #v65-loyaltyPointsFormWrapper legend,
 #v65-clubFormWrapper #v65-couponFormWrapper legend,
-#v65-clubFormWrapper #v65-giftCardFormWrapper legend {
+#v65-clubFormWrapper #v65-giftCardFormWrapper legend,
+#v65-clubFormWrapper #v65-loyaltyPointsFormWrapper legend {
   font-size: 16px;
 }
 @media screen and (max-width: 385px) {
@@ -3224,6 +3268,17 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
   #v65-clubFormWrapper #v65-giftCardFormWrapper button.modalBtn {
     width: 35%;
   }
+}
+
+#v65-pointsGainedOnOrder {
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  font-size: 1em;
+  padding: 0.5em 0;
+  margin: 0.5em 0 1em;
+}
+#v65-pointsGainedOnOrder p {
+  margin: 0;
 }
 
 #v65-checkBilling {

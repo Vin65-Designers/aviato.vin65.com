@@ -433,9 +433,22 @@
 // Forms
 // ======================================== //
 
-input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'] {
+input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], input[type='number'] {
 	background: #f8f8f8;
 	border: 1px solid #E7E7E7;
+}
+
+input[type='number'] {
+	height: 2.5em;
+	line-height: 2.5em;
+	min-width: 3em;
+	padding: 0 0.5em;
+
+	@media screen and (max-width: 580px){
+		height: 4em;
+		line-height: 4em;
+		min-width: 3em;
+	}
 }
 
 .v65-form {
@@ -451,7 +464,7 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
 		margin-bottom: 0.5em;
 	}
 
-	input[type=text], input[type=password], input[type='username'], textarea {
+	input[type=text], input[type=password], input[type='username'], textarea, input[type='number'] {
 		background: #f8f8f8;
 		border: 1px solid #E7E7E7;
 		-ms-box-sizing:  border-box;
@@ -465,7 +478,7 @@ input[type='text'], input[type='password'], input[type='username'], input[type='
 
 .v65-product-addToCart-quantity,
 .subscribeSection {
-	input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'] {
+	input[type='text'], input[type='password'], input[type='username'], input[type='tel'], input[type='email'], input[type='number'] {
 		border-color: #e4e4e4;
 		
 		@media screen and (min-width: 581px){

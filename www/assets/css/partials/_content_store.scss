@@ -218,7 +218,8 @@
 	}
 
 	#v65-couponFormWrapper legend,
-	#v65-giftCardFormWrapper legend {
+	#v65-giftCardFormWrapper legend,
+	#v65-loyaltyPointsFormWrapper legend {
 		font-size: 16px;
 	}
 
@@ -229,6 +230,18 @@
 				width: 35%;
 			}
 		}
+	}
+}
+
+#v65-pointsGainedOnOrder {
+	border-bottom: 1px solid $borderColor;
+	border-top: 1px solid $borderColor;
+	font-size: 1em;
+	padding: 0.5em 0;
+	margin: 0.5em 0 1em;
+
+	p {
+		margin: 0;
 	}
 }
 

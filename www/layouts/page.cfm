@@ -46,8 +46,9 @@
 
 		<div class="userToolsWrapper">
 			<div id="user-tools">
-				<cf_modalCart>	
+				<cf_points>
 				<cf_login>
+				<cf_modalCart>	
 			</div><!--/user-tools-->
 		</div>
 		<div class="wideWrapper">

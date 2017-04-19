@@ -25,7 +25,6 @@
 
 	<p style="text-align: center;">
 		<strong><cf_websiteName></strong><br>
-		111 North Street, Our City, CA (707) 888-9090
 	</p>
 	
 	<cf_vin65GlobalFooterAssets>

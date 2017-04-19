@@ -34,6 +34,7 @@ header.primary{
 			size: 15px;
 			style: italic;
 		}
+		width: auto;
 
 		@media screen and (max-width: 580px){
 			background-color: $userToolsBg;
@@ -56,10 +57,32 @@ header.primary{
 		.v65-yourAccount, .v65-editProfile,
 		.v65-login, .v65-logout {
 			border-color: $userToolsBorder;
+
+			@media screen and (min-width: 581px){
+				width: auto;
+			}	
 		}
 
 		.v65-additionalItemsMessage a {
 			color: #000;
+		}
+
+		.v65-pointsBalance {
+			display: inline-block;
+			padding-right: 1em;
+
+			@media screen and (max-width: 580px){
+				display: none;
+			}
+		}
+
+		#v65-modalCart {
+			position: static;
+
+			@media screen and (min-width: 581px){
+				display: inline-block;
+				padding-left: 1em;
+			}
 		}
 	}
 
