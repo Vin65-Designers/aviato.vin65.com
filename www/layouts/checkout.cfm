@@ -45,9 +45,7 @@
 		</div>
 
 		<div class="wideWrapper">
-			<h1 class="logo hideText">
-				<a href="/" accesskey="h"><cf_websiteName></a>
-			</h1>
+			<cf_logo>
 			
 			<nav class="mainMenu">
 				
@@ -78,7 +76,7 @@
 			<div class="footerSection">
 				<h3><cf_pods location="Footer Middle Content" type="title"></h3>
 				<cf_pods location="Footer Middle Content" type="description">
-				<cf_customFile file="/v65html/_social.html">
+				<cf_socialMediaLinks>
 			</div>
 
 			<div class="footerSection">
@@ -88,6 +86,7 @@
 				
 
 			<div class="legal"> 
+				<cf_footerInfo><br/>
 				<cf_copyright><br/>
 				<cf_vin65Accolade>
 			</div><!--/footerTools-->
