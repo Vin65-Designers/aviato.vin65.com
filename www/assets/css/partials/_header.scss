@@ -88,20 +88,10 @@ header.primary{
 
 
 
-	.logo{
-		background:{
-			image: image-url($logo);
-			position: top center;
-			repeat: no-repeat;
-		}
-		background-size: contain;
-		display: block;
+	.v65-logo{
 		float: left;
-		height: 140px;
 		margin-top: 20px;
 		margin-bottom: 0;
-		position: relative;
-		width: 280px;
 
 		a {
 			-ms-transition: none;
@@ -119,9 +109,12 @@ header.primary{
 			background-image: image-url($logo-retina);
 		}
 
-		@media screen and (max-width: 580px){
+		@media screen and (max-width: 600px){
 			height: 148px;
 			width: 230px;
+		}
+		@media screen and (max-width: 580px) {
+			margin: 0;
 		}
 	}
 

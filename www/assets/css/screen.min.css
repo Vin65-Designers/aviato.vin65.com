@@ -1,4 +1,3 @@
-@charset "utf-8";
 /* CSS Document */
 /* ====================================================================================================
 	Table of Content
@@ -403,7 +402,6 @@ table {
   font-weight: normal;
   font-style: normal;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -568,7 +566,7 @@ table {
   width: 100%;
   height: auto;
   overflow: hidden;
-  background: white url(../nivo/loading.gif) no-repeat 50% 50%;
+  background: #fff url(../nivo/loading.gif) no-repeat 50% 50%;
 }
 
 .nivoSlider img {
@@ -720,14 +718,14 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #fff;
   color: #161616;
   font-family: "Karla", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333333;
+  color: #333;
   font-family: "Karla", sans-serif;
   font-weight: normal;
   margin: 0;
@@ -777,7 +775,7 @@ h6 {
 }
 
 .v65-title {
-  color: #333333;
+  color: #333;
   font-size: 1.5em;
   font-weight: normal;
   line-height: 1;
@@ -791,7 +789,7 @@ h6 {
 }
 
 .v65-subtitle {
-  color: #333333;
+  color: #333;
   font-size: 1.2em;
   font-weight: normal;
   line-height: 1;
@@ -910,13 +908,13 @@ header.primary #user-tools {
 }
 @media screen and (max-width: 580px) {
   header.primary #user-tools {
-    background-color: white;
+    background-color: #fff;
     border-bottom: 1px solid #f3f4f4;
-    color: black;
+    color: #000;
   }
 }
 header.primary #user-tools a {
-  color: white;
+  color: #fff;
   -ms-transition: none;
   -moz-transition: none;
   -webkit-transition: none;
@@ -924,7 +922,7 @@ header.primary #user-tools a {
 }
 @media screen and (max-width: 580px) {
   header.primary #user-tools a {
-    color: black;
+    color: #000;
   }
 }
 header.primary #user-tools .v65-yourAccount, header.primary #user-tools .v65-editProfile,
@@ -958,38 +956,35 @@ header.primary #user-tools #v65-modalCart {
     padding-left: 1em;
   }
 }
-header.primary .logo {
-  background-image: url('../images/logo.png?1465851085');
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: block;
+header.primary .v65-logo {
   float: left;
-  height: 140px;
   margin-top: 20px;
   margin-bottom: 0;
-  position: relative;
-  width: 280px;
 }
-header.primary .logo a {
+header.primary .v65-logo a {
   -ms-transition: none;
   -moz-transition: none;
   -o-transition: none;
   -webkit-transition: none;
   transition: none;
 }
-header.primary .logo.errorLogo {
+header.primary .v65-logo.errorLogo {
   float: none;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-  header.primary .logo {
-    background-image: url('../images/logo@2x.png?1465851085');
+  header.primary .v65-logo {
+    background-image: url('../images/logo@2x.png?1546907753');
+  }
+}
+@media screen and (max-width: 600px) {
+  header.primary .v65-logo {
+    height: 148px;
+    width: 230px;
   }
 }
 @media screen and (max-width: 580px) {
-  header.primary .logo {
-    height: 148px;
-    width: 230px;
+  header.primary .v65-logo {
+    margin: 0;
   }
 }
 header.primary.pageHeader {
@@ -1164,7 +1159,7 @@ header.primary .searchButton {
 }
 @media screen and (max-width: 950px) {
   .mainMenu {
-    background-color: #1d1d1d;
+    background-color: #1D1D1D;
     -ms-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -1178,7 +1173,7 @@ header.primary .searchButton {
     transition: all 0.25s;
   }
 }
-@media screen and (min-width: 731px) and (max-width: 950px) {
+@media screen and (min-width: 581px) and (max-width: 950px) {
   .mainMenu {
     height: 100%;
     max-height: 87%;
@@ -1187,19 +1182,6 @@ header.primary .searchButton {
     max-height: calc(100% - 120px);
     overflow: auto;
     top: 120px;
-    right: -300px;
-    width: 300px;
-  }
-}
-@media screen and (max-width: 730px) {
-  .mainMenu {
-    height: 100%;
-    max-height: 87%;
-    max-height: -moz-calc(100% - 160px);
-    max-height: -webkit-calc(100% - 160px);
-    max-height: calc(100% - 160px);
-    overflow: auto;
-    top: 160px;
     right: -300px;
     width: 300px;
   }
@@ -1251,7 +1233,7 @@ header.primary .searchButton {
   }
 }
 .mainMenu ul ul .v65-selected {
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
 .mainMenu li {
@@ -1291,7 +1273,7 @@ header.primary .searchButton {
   }
 }
 .mainMenu li li a {
-  color: white;
+  color: #fff;
   display: block;
   height: 28px;
   line-height: 28px;
@@ -1302,7 +1284,7 @@ header.primary .searchButton {
   width: 100%;
 }
 .mainMenu li li a:hover {
-  color: #cccccc;
+  color: #ccc;
 }
 @media screen and (max-width: 950px) {
   .mainMenu li li a {
@@ -1317,7 +1299,7 @@ header.primary .searchButton {
   }
 }
 .mainMenu a {
-  color: white;
+  color: #fff;
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -1339,11 +1321,11 @@ header.primary .searchButton {
   }
 }
 .mainMenu a:hover {
-  color: #cccccc;
+  color: #ccc;
   text-decoration: none;
 }
 .mainMenu .v65-pageAParent {
-  color: white;
+  color: #fff;
 }
 @media screen and (max-width: 919px) {
   .mainMenu .v65-home {
@@ -1351,7 +1333,7 @@ header.primary .searchButton {
   }
 }
 .mainMenu .v65-selected {
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
 .mainMenu .footerMenuLink {
@@ -1418,7 +1400,7 @@ header.primary .searchButton {
 }
 
 .icon-menu {
-  color: white;
+  color: #fff;
   clear: right;
   cursor: pointer;
   font-size: 2.2em;
@@ -1431,7 +1413,7 @@ header.primary .searchButton {
     display: none;
   }
 }
-@media screen and (min-width: 581px) and (max-width: 730px) {
+@media screen and (max-width: 580px) {
   .icon-menu {
     margin-top: 2em;
   }
@@ -1469,7 +1451,7 @@ header.primary .searchButton {
      4. Content
 ======================================================================================================== */
 #v65-modalContentHeader {
-  background: #333333;
+  background: #333;
 }
 
 .wrapper {
@@ -1571,14 +1553,12 @@ header.primary .searchButton {
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
-
 @keyframes fadeInDown {
   0% {
     opacity: 0;
@@ -1586,7 +1566,6 @@ header.primary .searchButton {
     -ms-transform: translateY(-20px);
     transform: translateY(-20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -1594,7 +1573,6 @@ header.primary .searchButton {
     transform: translateY(0);
   }
 }
-
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -1606,14 +1584,12 @@ header.primary .searchButton {
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
-
 @keyframes fadeInDownBig {
   0% {
     opacity: 0;
@@ -1621,7 +1597,6 @@ header.primary .searchButton {
     -ms-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -1629,7 +1604,6 @@ header.primary .searchButton {
     transform: translateY(0);
   }
 }
-
 .fadeInDownBig {
   -webkit-animation-name: fadeInDownBig;
   animation-name: fadeInDownBig;
@@ -1641,14 +1615,12 @@ header.primary .searchButton {
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
-
 @keyframes fadeInLeft {
   0% {
     opacity: 0;
@@ -1656,7 +1628,6 @@ header.primary .searchButton {
     -ms-transform: translateX(-20px);
     transform: translateX(-20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -1664,7 +1635,6 @@ header.primary .searchButton {
     transform: translateX(0);
   }
 }
-
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
@@ -1676,14 +1646,12 @@ header.primary .searchButton {
     -webkit-transform: translateX(-2000px);
     transform: translateX(-2000px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
-
 @keyframes fadeInLeftBig {
   0% {
     opacity: 0;
@@ -1691,7 +1659,6 @@ header.primary .searchButton {
     -ms-transform: translateX(-2000px);
     transform: translateX(-2000px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -1699,7 +1666,6 @@ header.primary .searchButton {
     transform: translateX(0);
   }
 }
-
 .fadeInLeftBig {
   -webkit-animation-name: fadeInLeftBig;
   animation-name: fadeInLeftBig;
@@ -1711,14 +1677,12 @@ header.primary .searchButton {
     -webkit-transform: translateX(20px);
     transform: translateX(20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
-
 @keyframes fadeInRight {
   0% {
     opacity: 0;
@@ -1726,7 +1690,6 @@ header.primary .searchButton {
     -ms-transform: translateX(20px);
     transform: translateX(20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -1734,7 +1697,6 @@ header.primary .searchButton {
     transform: translateX(0);
   }
 }
-
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
@@ -1746,14 +1708,12 @@ header.primary .searchButton {
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
-
 @keyframes fadeInRightBig {
   0% {
     opacity: 0;
@@ -1761,7 +1721,6 @@ header.primary .searchButton {
     -ms-transform: translateX(2000px);
     transform: translateX(2000px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -1769,7 +1728,6 @@ header.primary .searchButton {
     transform: translateX(0);
   }
 }
-
 .fadeInRightBig {
   -webkit-animation-name: fadeInRightBig;
   animation-name: fadeInRightBig;
@@ -1781,14 +1739,12 @@ header.primary .searchButton {
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
-
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -1796,7 +1752,6 @@ header.primary .searchButton {
     -ms-transform: translateY(20px);
     transform: translateY(20px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -1804,7 +1759,6 @@ header.primary .searchButton {
     transform: translateY(0);
   }
 }
-
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
@@ -1816,14 +1770,12 @@ header.primary .searchButton {
     -webkit-transform: translateY(2000px);
     transform: translateY(2000px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
-
 @keyframes fadeInUpBig {
   0% {
     opacity: 0;
@@ -1831,7 +1783,6 @@ header.primary .searchButton {
     -ms-transform: translateY(2000px);
     transform: translateY(2000px);
   }
-
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -1839,7 +1790,6 @@ header.primary .searchButton {
     transform: translateY(0);
   }
 }
-
 .fadeInUpBig {
   -webkit-animation-name: fadeInUpBig;
   animation-name: fadeInUpBig;
@@ -1849,22 +1799,18 @@ header.primary .searchButton {
   0% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
 }
-
 @keyframes fadeOut {
   0% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
 }
-
 .fadeOut {
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
@@ -1876,14 +1822,12 @@ header.primary .searchButton {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
     transform: translateY(20px);
   }
 }
-
 @keyframes fadeOutDown {
   0% {
     opacity: 1;
@@ -1891,7 +1835,6 @@ header.primary .searchButton {
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateY(20px);
@@ -1899,7 +1842,6 @@ header.primary .searchButton {
     transform: translateY(20px);
   }
 }
-
 .fadeOutDown {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;
@@ -1911,14 +1853,12 @@ header.primary .searchButton {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
     transform: translateY(2000px);
   }
 }
-
 @keyframes fadeOutDownBig {
   0% {
     opacity: 1;
@@ -1926,7 +1866,6 @@ header.primary .searchButton {
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -1934,7 +1873,6 @@ header.primary .searchButton {
     transform: translateY(2000px);
   }
 }
-
 .fadeOutDownBig {
   -webkit-animation-name: fadeOutDownBig;
   animation-name: fadeOutDownBig;
@@ -1946,14 +1884,12 @@ header.primary .searchButton {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
   }
 }
-
 @keyframes fadeOutLeft {
   0% {
     opacity: 1;
@@ -1961,7 +1897,6 @@ header.primary .searchButton {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateX(-20px);
@@ -1969,7 +1904,6 @@ header.primary .searchButton {
     transform: translateX(-20px);
   }
 }
-
 .fadeOutLeft {
   -webkit-animation-name: fadeOutLeft;
   animation-name: fadeOutLeft;
@@ -1981,14 +1915,12 @@ header.primary .searchButton {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
     transform: translateX(-2000px);
   }
 }
-
 @keyframes fadeOutLeftBig {
   0% {
     opacity: 1;
@@ -1996,7 +1928,6 @@ header.primary .searchButton {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateX(-2000px);
@@ -2004,7 +1935,6 @@ header.primary .searchButton {
     transform: translateX(-2000px);
   }
 }
-
 .fadeOutLeftBig {
   -webkit-animation-name: fadeOutLeftBig;
   animation-name: fadeOutLeftBig;
@@ -2016,14 +1946,12 @@ header.primary .searchButton {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateX(20px);
     transform: translateX(20px);
   }
 }
-
 @keyframes fadeOutRight {
   0% {
     opacity: 1;
@@ -2031,7 +1959,6 @@ header.primary .searchButton {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateX(20px);
@@ -2039,7 +1966,6 @@ header.primary .searchButton {
     transform: translateX(20px);
   }
 }
-
 .fadeOutRight {
   -webkit-animation-name: fadeOutRight;
   animation-name: fadeOutRight;
@@ -2051,14 +1977,12 @@ header.primary .searchButton {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px);
   }
 }
-
 @keyframes fadeOutRightBig {
   0% {
     opacity: 1;
@@ -2066,7 +1990,6 @@ header.primary .searchButton {
     -ms-transform: translateX(0);
     transform: translateX(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -2074,7 +1997,6 @@ header.primary .searchButton {
     transform: translateX(2000px);
   }
 }
-
 .fadeOutRightBig {
   -webkit-animation-name: fadeOutRightBig;
   animation-name: fadeOutRightBig;
@@ -2086,14 +2008,12 @@ header.primary .searchButton {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
     transform: translateY(-20px);
   }
 }
-
 @keyframes fadeOutUp {
   0% {
     opacity: 1;
@@ -2101,7 +2021,6 @@ header.primary .searchButton {
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
@@ -2109,7 +2028,6 @@ header.primary .searchButton {
     transform: translateY(-20px);
   }
 }
-
 .fadeOutUp {
   -webkit-animation-name: fadeOutUp;
   animation-name: fadeOutUp;
@@ -2121,14 +2039,12 @@ header.primary .searchButton {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 }
-
 @keyframes fadeOutUpBig {
   0% {
     opacity: 1;
@@ -2136,7 +2052,6 @@ header.primary .searchButton {
     -ms-transform: translateY(0);
     transform: translateY(0);
   }
-
   100% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -2144,7 +2059,6 @@ header.primary .searchButton {
     transform: translateY(-2000px);
   }
 }
-
 .fadeOutUpBig {
   -webkit-animation-name: fadeOutUpBig;
   animation-name: fadeOutUpBig;
@@ -2156,26 +2070,22 @@ header.primary .searchButton {
     transform: translate3d(0, -100%, 0);
     visibility: visible;
   }
-
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 @keyframes slideInDown {
   0% {
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
     visibility: visible;
   }
-
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
@@ -2187,26 +2097,22 @@ header.primary .searchButton {
     transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
-
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 @keyframes slideInLeft {
   0% {
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
-
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
@@ -2218,26 +2124,22 @@ header.primary .searchButton {
     transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
-
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 @keyframes slideInRight {
   0% {
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
-
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
@@ -2249,26 +2151,22 @@ header.primary .searchButton {
     transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
-
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 @keyframes slideInUp {
   0% {
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
-
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
@@ -2279,27 +2177,23 @@ header.primary .searchButton {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
 }
-
 @keyframes slideOutDown {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
 }
-
 .slideOutDown {
   -webkit-animation-name: slideOutDown;
   animation-name: slideOutDown;
@@ -2310,27 +2204,23 @@ header.primary .searchButton {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
   }
 }
-
 @keyframes slideOutLeft {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
   }
 }
-
 .slideOutLeft {
   -webkit-animation-name: slideOutLeft;
   animation-name: slideOutLeft;
@@ -2341,27 +2231,23 @@ header.primary .searchButton {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
   }
 }
-
 @keyframes slideOutRight {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
   }
 }
-
 .slideOutRight {
   -webkit-animation-name: slideOutRight;
   animation-name: slideOutRight;
@@ -2372,27 +2258,23 @@ header.primary .searchButton {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
 }
-
 @keyframes slideOutUp {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-
   100% {
     visibility: hidden;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
 }
-
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
@@ -2400,7 +2282,7 @@ header.primary .searchButton {
 
 #v65-modalContentWrapper,
 #v65-modalContentHeader {
-  background: white;
+  background: #fff;
 }
 
 /* ----- a. Homepage Styles ----- */
@@ -2509,10 +2391,10 @@ a.linkBtn.headerBtn {
 
 /* ----- b. Page Styles ----- */
 .backToTop {
-  background: black;
+  background: #000;
   bottom: 1em;
   border-radius: 50%;
-  color: white;
+  color: #fff;
   display: none;
   height: 5em;
   line-height: 5em;
@@ -2999,7 +2881,7 @@ input[type='number'] {
   color: #161616;
 }
 #v65-CalendarTable th {
-  background-color: white;
+  background-color: #fff;
   border: 0;
   color: #161616;
   font-family: "Karla", sans-serif;
@@ -3008,8 +2890,8 @@ input[type='number'] {
 }
 #v65-CalendarTable td {
   background-color: #f3f4f4;
-  border-bottom: 3px solid white;
-  border-left: 3px solid white;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
   height: 80px;
 }
 #v65-CalendarTable .v65-CalendarDay {
@@ -3638,7 +3520,7 @@ form#v65-addProductReview legend {
 .v65-blogFooterDate,
 .v65-blogFooterComments,
 .v65-blogFooterLink {
-  color: #333333;
+  color: #333;
   -webkit-font-smoothing: antialiased;
 }
 .v65-blogFooterDate img,
@@ -3685,7 +3567,7 @@ button.defaultBtn, button.modalBtn, button.largeBtn {
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -ms-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -3724,7 +3606,7 @@ button.altBtn, button.altModalBtn, button.altLargeBtn {
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -ms-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -3751,7 +3633,7 @@ a.linkBtn, a.modalLinkBtn, a.largeLinkBtn {
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -ms-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -3778,7 +3660,7 @@ a.linkAltBtn, a.modalLinkAltBtn, a.modalLinkAltBtn {
   border-radius: 3px;
   text-decoration: none;
   vertical-align: middle;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   -ms-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
@@ -3807,19 +3689,6 @@ footer {
   padding: 7em 0 0;
   text-align: center;
   width: 100%;
-}
-footer .socialIcons li {
-  display: inline-block;
-  padding: 5px;
-}
-@media screen and (max-width: 580px) {
-  footer .socialIcons li {
-    border: 0;
-    padding: 0 7px;
-  }
-}
-footer .socialIcons i {
-  font-size: 1.6em;
 }
 footer .footerSection {
   margin-bottom: 3em;
@@ -3871,6 +3740,9 @@ footer li a {
 }
 footer li a:hover {
   color: #b7b7b7;
+}
+footer .v65-socialMediaLinks li {
+  border-bottom: 0;
 }
 footer a {
   color: #777777;
