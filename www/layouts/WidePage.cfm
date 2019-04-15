@@ -14,7 +14,7 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Petit+Formal+Script|Karla:400,400italic,700' rel='stylesheet' type='text/css'>
 
-	<cf_css files="/assets/css/screen.min.css">
+	<cf_css files="/assets/slick/slick-winedirect.css,/assets/slick/slick-theme-winedirect.css,/assets/css/screen.min.css">
 	
 	<!--[if lt IE 9]>
 		<script src="/assets/js/html5shiv-printshiv.js"></script>
@@ -52,9 +52,7 @@
 			</div><!--/user-tools-->
 		</div>
 		<div class="wideWrapper">
-			<h1 class="logo hideText">
-				<a href="/" accesskey="h"><cf_websiteName></a>
-			</h1>
+			<cf_logo>
 			
 			<i class="icon-menu"></i>
 			<nav class="mainMenu">
@@ -90,7 +88,7 @@
 			<div class="footerSection">
 				<h3><cf_pods location="Footer Middle Content" type="title"></h3>
 				<cf_pods location="Footer Middle Content" type="description">
-				<cf_customFile file="/v65html/_social.html">
+				<cf_socialMediaLinks>
 			</div>
 
 			<div class="footerSection">
@@ -100,13 +98,14 @@
 				
 
 			<div class="legal"> 
+				<cf_footerInfo><br/>
 				<cf_copyright><br/>
 				<cf_vin65Accolade>
 			</div><!--/footerTools-->
 		</div>
 	</footer>
 
-	<cf_js files="/assets/js/scripts.js,/assets/nivo/jquery.nivo.slider.pack.js,/assets/js/jquery.matchHeight-min.js,/assets/js/wow.min.js">
+	<cf_js files="/assets/slick/slick-winedirect.js,/assets/js/scripts.js,/assets/js/jquery.matchHeight-min.js,/assets/js/wow.min.js">
 
 	<cf_vin65GlobalFooterAssets>
 
