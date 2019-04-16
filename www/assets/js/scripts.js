@@ -127,17 +127,19 @@
 		initPhotoGallery : function(){
 			if($("#pagePhotoGallery").length){
 				$("#pagePhotoGallery").v65PhotoGallery({
-					galleryHeight : null, // This value is translated to 420px and will change the photogallery height
-					galleryWidth : null // This value is translated to 630px and will change the photogallery width
+					galleryHeight : null, // This value is translated to the set height of the gallery and will change the photogallery height
+					galleryWidth : null, // This value is translated to the set width of the gallery and will change the photogallery width
 					/*
 						Uncomment the code below if you want to change how the photo gallery is displayed.
-
-						galleryHeight : 420, // This value is translated to 420px and will change the photogallery height
-						galleryWidth : 630, // This value is translated to 630px and will change the photogallery width
-						pauseTime : 5000, // Adjust how long the image is displayed for. Value is in milliseconds
-						animSpeed : 1000, // Adjust the transition speed between images. Value is in milliseconds
-						controlNav : false, // hide the 1,2,3 navigation
-						directionNav : false // hide the arrow navigation
+						arrows: true, //Show the arrow navigation
+						autoplay: false, //Does the carousel autoplay or not
+						autoplaySpeed: 3000,, // Adjust the transition speed between images. Value is in milliseconds
+						centerMode: false, //Enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.
+            centerPadding: '50px', //Side padding when in center mode (px or %)
+						dots: true, //Show the dot navigation for each image
+						fade: false, //Add a fade effect between image transitions
+            slidesToShow: 1, //How may slides to show at once
+						slidesToScroll: 1 //How many slides to scroll at once
 					*/
 				});
 			}
